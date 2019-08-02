@@ -1,0 +1,14 @@
+---
+:matt: !ruby/string:BCrypt::Password
+  str: "$2a$12$bPhKcy4Y3q3kZBmdVuFS2.9Q3nEm0ropEl4cIoSZVncOmZG2w27ea"
+  version: 2a
+  cost: 12
+  salt: "$2a$12$bPhKcy4Y3q3kZBmdVuFS2."
+  checksum: 9Q3nEm0ropEl4cIoSZVncOmZG2w27ea
+:developer: letmein
+:dani: !ruby/string:BCrypt::Password
+  str: "$2a$12$SjFiQ/NfhBIFDLAnRdwHlerSsB8r5kxkdb.T1/g7T.6SD2gXZMY7a"
+  version: 2a
+  cost: 12
+  salt: "$2a$12$SjFiQ/NfhBIFDLAnRdwHle"
+  checksum: rSsB8r5kxkdb.T1/g7T.6SD2gXZMY7a

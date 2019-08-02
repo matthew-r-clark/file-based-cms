@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>File-Based CMS App</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/cms.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <% if session[:error] %>
+        <div class="error">
+          <p><%= session.delete(:error) %></p>
+        </div>
+      <% end %>
+
+      <% if session[:success] %>
+        <div class="success">
+          <p><%= session.delete(:success) %></p>
+        </div>
+      <% end %>
+    </header>
+    <main>
+      <div>
+        <%== yield %>
+      </div>
+    </main>
+    <footer>
+      <% if session[:username] %>
+        <div>Logged in as <%= session[:username] %> 
+          <a href="/signout"><button>Sign Out</button></a>
+        </div>
+      <% end %>
+    </footer>
+  </body>
+</html>
